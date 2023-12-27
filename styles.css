@@ -1,0 +1,47 @@
+body {
+    padding: 1rem;
+}
+img#statue {
+    float: right;
+    margin: 0 0.5rem 0 1.5rem;
+}
+
+div {
+    background-color: red;
+}
+
+div > h2 {
+    margin-bottom: 8px;
+}
+
+li:hover {
+    background-color: yellow;
+    color: black;
+}
+
+div > ol, div > ul:not(.container), div > p {
+    margin-top: 8px;
+    padding-bottom: 1rem;
+}
+
+.container {
+    display: flex;
+    list-style: none;
+    justify-content: space-evenly;
+    align-items: center;
+    height: 2rem;
+    padding-left: 0px;
+}
+
+.container > li {
+    float: left;
+    padding: 0 50px;
+}
+
+
+@media screen and (max-width: 780px) {
+    .container > li {
+        float: left;
+        padding: 0 10px;
+    }
+  }
